@@ -1,8 +1,15 @@
-public enum EmployeeType { Worker, Supervisor, Manager }
+package src;
+
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+
+
+
 
 public class Employee
 {   //remuneracion mensual unificada
-    private final float rmu = 386.0;
+    private final float rmu = (float) 386.0;
     //salario del employee
     private float salary;
     private String currency;
@@ -31,7 +38,7 @@ public class Employee
         // Si la moneda es USD, se considera todo el salario,
         // caso contrario se resta 5% por cambio de moneda
         if(currency == "USD"){salario = salary; }
-        else{salario = salary * 0.95;}
+        else{salario = (float) (salary * 0.95);}
         switch (employeeType)         
         {
             case Worker:
@@ -57,7 +64,7 @@ public class Employee
         // Si la moneda es USD, se considera todo el salario,
         // caso contrario se resta 5% por cambio de moneda
         if(currency == "USD"){salario = salary; }
-        else{salario = salary * 0.95;}
+        else{salario = (float) (salary * 0.95);}
         switch (employeeType) {
             case Worker:
                 return rmu;
