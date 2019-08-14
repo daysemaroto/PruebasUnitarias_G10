@@ -30,6 +30,16 @@ public class EmployeeTest {
         assertEquals(expResult, result,0.0);
     }
 
+    /**
+     * Test of cs method, of class Employee, para el tipo de Manager
+     */
+    @Test
+    public void testCsManager() {
+        Employee instance = new Employee(450.00F,"USD",12.00F,EmployeeType.Manager);
+        float expResult = 458.4F;
+        float result = instance.cs();
+        assertEquals(expResult, result,0.0);
+    }
 //    /**
 //     * Test of CalculateYearBonus method, of class Employee.
 //     */
