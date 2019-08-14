@@ -34,7 +34,7 @@ public class EmployeeTest {
      * Test of CalculateYearBonus method, of class Employee , para el tipo de Worker
      */
     @Test
-    public void testCalculateYearBonus() {
+    public void testCalculateYearBonusWorker() {
         System.out.println("CalculateYearBonus");
         Employee instance = new Employee((float)450.00,"USD",(float)12.00,EmployeeType.Worker);
         float expResult = 386.0F;
