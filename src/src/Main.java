@@ -22,5 +22,6 @@ public class Main {
                 Employee instance2 = new Employee(1000.00F,"USD",150.0F,EmployeeType.Supervisor);
 
                 System.out.println(instance2.cs());
+                System.out.println(instance2.CalculateYearBonus());
     }
 }
