@@ -29,6 +29,15 @@ public class EmployeeTest {
         float result = instance.cs();
         assertEquals(expResult, result,0.0);
     }
+    
+    @Test
+    public void testCsSupervisor() {
+        System.out.println("cs");
+        Employee instance = new Employee(1000.00F,"USD",150.0F,EmployeeType.Supervisor);
+        float expResult = 1052.5F;
+        float result = instance.cs();
+        assertEquals(expResult, result,0.0);
+    }
 
 //    /**
 //     * Test of CalculateYearBonus method, of class Employee.
