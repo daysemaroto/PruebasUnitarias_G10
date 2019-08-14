@@ -29,8 +29,7 @@ public class EmployeeTest {
         float result = instance.cs();
         assertEquals(expResult, result,0.0);
     }
-    
-    
+      
     /**
      * Test of cs method, of class Employee, para el tipo de Manager
      */
@@ -40,7 +39,7 @@ public class EmployeeTest {
         float expResult = 458.4F;
         float result = instance.cs();
         assertEquals(expResult, result,0.0);
-    }
+    } 
     
      @Test
     public void testCsSupervisor() {
