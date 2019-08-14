@@ -10,11 +10,12 @@ package src;
  * @author Dayse Maroto
  */
 public class Main {
-    
-    
-    public static void main(String[] args) {
-                Employee instance = new Employee((float)450.00,"USD",(float)12.00,EmployeeType.Worker);
 
-                System.out.println(instance.cs());
+    public static void main(String[] args) {
+        Employee instance = new Employee((float) 450.00, "USD", (float) 12.00, EmployeeType.Worker);
+
+        System.out.println(instance.cs());
+        System.out.println(instance.CalculateYearBonus());
+        
     }
 }
